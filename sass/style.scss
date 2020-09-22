@@ -1,7 +1,7 @@
 /* veriables and mixins */
-import "variables";
-import "mixins";
+@import 'variables';
+@import 'mixins';
 
 /* styles which will present in css */
-import "normalize";
-import "layout";
+@import 'normalize';
+@import 'layout';
