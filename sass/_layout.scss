@@ -1,4 +1,10 @@
-body {
-  background-color: #ffffff;
+* {
   box-sizing: border-box;
+}
+
+body {
+  font-size: $basic-size;
+  margin: 0;
+  padding: 0;
+  background-color: $section-light;
 }

@@ -2,13 +2,10 @@
   height: 30px;
   margin: 5px;
   width: 90px;
-  background-color: grey;
+  background-color: $color-B;
   border: none;
-  border-radius: 3px;
-  color: grey;
-  &:hover {
-    background-color: none;
-  }
+  border-radius: 2px;
+  color: $font-light-one;
 }
 
 .dot {

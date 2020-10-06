@@ -4,54 +4,59 @@
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>General Statistic Project</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 			<link rel="stylesheet" href="css/style.css">
 	  </head>
 	  <body>
    
 			<section class="sidebar">
-				<div class="component-menu">
-					<div class="logo-wrapper">
-						<h1 class="logo">
-        Just do it
-        <i class="fas fa-bars"></i>
-      </h1>
-					</div>
-					<ul>
-						<li>
-							<img src="images/icon/general.svg" alt="image" width="20px" height="20px">
-							<a href="index.html">General</a>
-						</li>
-						<li>
-							<img src="images/icon/details.svg" alt="image" width="20px" height="20px">
-							<a href="">Details</a>
-						</li>
-						<li>
-							<img src="images/icon/links.svg" alt="image" width="20px" height="20px">
-							<a href="links.html">Links</a>
-						</li>
-						<li>
-							<img src="images/icon/banners.svg" alt="image" width="20px" height="20px">
-							<a href="">Banners</a>
-						</li>
-						<li>
-							<img src="images/icon/personaldata.svg" alt="image" width="20px" height="20px">
-							<a href="">Personal data</a>
-						</li>
-						<li>
-							<img src="images/icon/payout.svg" alt="image" width="20px" height="20px">
-							<a href="">Payout</a>
-						</li>
-						<li>
-							<img src="images/icon/postback.svg" alt="image" width="20px" height="20px">
-							<a href="">Postback</a>
-						</li>
-					</ul>
-				</div>
-			</section>
+				<div class="menu">
+					 <div class="logo-wrapper">
+						  <h1 class="logo">
+          Just do it
+          <i class="fas fa-bars"></i>
+        </h1>
+					  </div>
+       <div class="menu-list">
+					    <ul>
+						     <li>
+							     <img src="images/icon/general.svg" alt="image" width="20px" height="20px">
+							     <a href="">General</a>
+						    </li>
+						    <li>
+							     <img src="images/icon/details.svg" alt="image" width="20px" height="20px">
+							     <a href="">Details</a>
+						    </li>
+						    <li>
+						    	 <img src="images/icon/links.svg" alt="image" width="20px" height="20px">
+						     	<a href="">Links</a>
+						    </li>
+					    	<li>
+							     <img src="images/icon/banners.svg" alt="image" width="20px" height="20px">
+							     <a href="">Banners</a>
+						    </li>
+						    <li>
+						     	<img src="images/icon/personaldata.svg" alt="image" width="20px" height="20px">
+						     	<a href="">Personal data</a>
+					    	</li>
+					    	<li>
+					     		<img src="images/icon/payout.svg" alt="image" width="20px" height="20px">
+					     		<a href="">Payout</a>
+				    		</li>
+				    		<li>
+			     				 <img src="images/icon/postback.svg" alt="image" width="20px" height="20px">
+			     				 <a href="">Postback</a>
+			    			 </li>
+			    	 </ul>
+       </div>
+				 </div>
+		 </section>
    
    <section class="topbar">
-			  <div class="container">
+			  <div class="topbar-container">
 					  <div class="topbar-box">
        </div>
 					  <div class="topbar-box">
@@ -87,59 +92,78 @@
 			</section>
    
 			<section class="content">
-					<h2>general statistics</h2>
-						<div class="component-calendar">
-							<div class="calendar-box">
-								<p>28.08.2020</p>
-							</div>
-							<div class="calendar-box">
-								<p>28.08.2020</p>
-								<img src="images/icon/calendar.svg" alt="image" width="20px" height="20px">
-							</div>
-						</div>
-      <div class="calendar-box">
-						  <button class="btn"><img src="images/icon/refresh.svg" alt="image" width="20px" height="20px"></button>
-					 </div>
-					<div class="list-component">	
-						<div class="background-list">
-							<ul>
-								<li>
-									<h3>Visit Signups</h3>
-									<p>323</p>
-								</li>
-								<li>
-									<h3>FTD</h3>
-									<p>554</p>
-								</li>
-							</ul>
-							<ul>
-								<li>
-									<h3>Net Deposit</h3>
-									<p>866</p>
-								</li>
-								<li>
-									<h3>Turnover</h3>
-									<p>244</p>
-								</li>
-							</ul>	
+     <div class="section-title">
+       <h2>general statistics</h2>
+     </div>
+					<div class="calendar-content">
+       <div class = "form-data">
+         <input type="data" value="2020-06-07">
+         <input type="date" value="dateValue"> <img src="images/icon/calendar.svg" alt="image" width="20px" height="20px">
+         <button class="btn"><img src="images/icon/refresh.svg" alt="image" width="20px" height="20px"></button>
+       </div>
+      </div>
+         
+						<div class="table-container">
+          <div class="table-box">
+            <table>
+              <tr>
+                <td class="left">Signups   </td>
+                <td class="right">124</td>
+              </tr>
+              <tr>
+                <td class="left">FTD</td>
+                <td class="right">446</td>
+              </tr>
+            </table>
+          </div>
+          <div class="table-box">
+            <table>
+              <tr>
+                <td class="left">New deposit</td>
+                <td><span class="right">564</span></td>
+              </tr>
+              <tr>
+                <td class="left">Turn over</td>
+                <td class="right">432</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      
+						<div class="chart-container">
+        <h3>Earnings chart</h3>
+							<canvas id="myChart"></canvas>
 						</div>
       
-      <div class="buttons">
-						<h3>Earnings chart</h3>
-							<button class="btn btn-one"><span><i class="fa fa-circle dot blu" aria-hidden="true"></i>
-</span>Signups</button>
-							<button class="btn btn-two"><span><i class="fa fa-circle dot orange" aria-hidden="true"></i>
-</span>FTD</button>
-							<button class="btn btn-three"><span><i class="fa fa-circle dot green" aria-hidden="true"></i>
-</span>Earned</button>
-						</div>
-						<div class="chart-container">
-							<canvas id="myChart"></canvas>
-						</div>	
-					</div>
-				</div>	
+     <div class="section-title">
+       <h2>LINKS</h2>
+     </div>
+     <div class="links-container">
+       <button class="btn">+add new</button>
+       <div class="table-box">
+         <table>
+           <tr>
+             <td class="left">Home page</td>
+             <td class="right"><a href="">https://www.hompage.com</a></td>
+           </tr>
+           <tr>
+             <td class="left">Currently offer</td>
+             <td class="right"><a href="">https://www.currently.com</a></td>
+           </tr>
+           <tr>
+             <td class="left">Blurpix</td>
+             <td class="right"><a href="">https://www.blurpix.com</a></td>
+           </tr>
+           <tr>
+             <td class="left">My site</td>
+             <td class="right"><a href="">https://www.mysite.com</a></td>
+           </tr>
+         </table>
+       </div>
+       <button class="btn">+add new</button>
+     </div>        
 			</section>	
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-		<script src="js/script.js"></script>		
+		<script src="js/script.js"></script>
 	  </body>
 	</html>

@@ -1,6 +1,8 @@
 /* veriables and mixins */
-/* Colors */
-/* Font sizes */
+/* section-body colors */
+/* font colors */
+/* other colors in use */
+/* font sizes */
 /* styles which will present in css */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -341,71 +343,117 @@ template {
   display: none;
 }
 
-body {
-  background-color: #ffffff;
+* {
   box-sizing: border-box;
 }
 
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f2;
+}
+
+section {
+  margin: 0;
+}
+
+.content,
+.topbar {
+  padding-left: 260px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  background-color: transparent;
+  width: 99%;
+}
+
+/* --- section content --- */
+.topbar-container,
+.chart-container,
+.calendar-content,
+.links-container,
+.section-title,
+.table-container {
+  background-color: #ffffff;
+  margin: 1px;
+}
+
+.table-container {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table-box {
+  -ms-flex: 0 1 50%;
+      flex: 0 1 50%;
+}
+
+/* --- section topbar --- */
+.topbar-container {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topbar-box {
+  -ms-flex: 0 1 33%;
+      flex: 0 1 33%;
+}
+
+/* --- section sidebar --- */
 .sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
   background-color: grey;
 }
 
 h1 {
-  color: grey;
-  font-size: 16px;
+  color: #ffffff;
+  font-size: 18px;
 }
 
 h2 {
-  color: grey;
-  font-size: 14px;
+  color: #979797;
+  font-size: 16px;
 }
 
-h3 {
+h3,
+ul > li,
+p,
+a {
   font-size: 14px;
-  margin: 30px 0;
 }
 
 p {
-  font-size: 14px;
-  line-height: 1.5;
   text-align: justify;
 }
 
 a {
   text-decoration: none;
-}
-
-img {
-  height: 20px;
-  width: 20px;
-  display: inline-block;
-  vertical-align: middle;
+  color: #8DBEC8;
 }
 
 ul > li {
-  font-size: 16px;
   list-style-type: none;
-  line-height: 2.5;
+}
+
+li > a {
+  color: #ffffff;
 }
 
 .btn {
   height: 30px;
   margin: 5px;
-}
-
-.btn-lg-key {
   width: 90px;
-  background-color: grey;
+  background-color: #f58220;
   border: none;
-  border-radius: 3px;
-  color: grey;
+  border-radius: 2px;
+  color: #ffffff;
 }
 
-.btn-lg-key:hover {
-  background-color: none;
-}
-
-.btn-lg-key .dot {
+.dot {
   height: 12px;
   width: 12px;
   border-radius: 25px;
@@ -413,15 +461,18 @@ ul > li {
   margin-right: 5px;
 }
 
-.btn-lg-key .blue {
-  background-color: blue;
+table {
+  border: none;
+  padding: 10px;
 }
 
-.btn-lg-key .orange {
-  background-color: orange;
+td {
+  border-bottom: 1px solid #f5f5f2;
+  padding-right: 50px;
+  width: 150px;
 }
 
-.btn-lg-key .green {
-  background-color: green;
+.right {
+  padding-left: 50px;
 }
 /*# sourceMappingURL=style.css.map */

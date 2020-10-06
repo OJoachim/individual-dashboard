@@ -1,3 +1,50 @@
+section {
+  margin: 0;
+}
+
+.content,
+.topbar {
+  padding-left: 260px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  background-color: transparent;
+  width: 99%
+}
+
+/* --- section content --- */
+.topbar-container,
+.chart-container,
+.calendar-content,
+.links-container,
+.section-title,
+.table-container {
+  background-color: $section-white;
+  margin: 1px;
+}
+
+.table-container {
+  display: flex;
+}
+
+.table-box {
+  flex: 0 1 50%;
+}
+
+/* --- section topbar --- */
+.topbar-container {
+  display: flex;
+}
+
+.topbar-box {
+  flex: 0 1 33%;
+}
+
+/* --- section sidebar --- */
 .sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
   background-color: grey;
 }

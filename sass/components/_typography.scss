@@ -1,0 +1,33 @@
+h1 {
+    color: $font-light-one;
+    font-size: $bigger-size-two;
+}
+
+h2{
+    color: $font-light-three;
+    font-size: $bigger-size-one;
+}
+
+h3,
+ul > li,
+p,
+a {
+  font-size: $basic-size;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+  color: $color-A;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+li > a {
+  color: $font-light-one;
+}
