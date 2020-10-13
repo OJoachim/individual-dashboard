@@ -6,6 +6,9 @@ h1 {
 h2{
     color: $font-light-three;
     font-size: $bigger-size-one;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 h3,
@@ -24,10 +27,19 @@ a {
   color: $color-A;
 }
 
+a:hover {
+  color: $color-B;
+}
+
 ul > li {
   list-style-type: none;
 }
 
 li > a {
   color: $font-light-one;
+}
+
+.fa-bars {
+  color: $font-light-one;
+  font-size: $bigger-size-two;
 }

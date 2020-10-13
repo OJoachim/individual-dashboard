@@ -1,0 +1,52 @@
+.form-container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: auto; 
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.form-data {
+  width: 100%;
+  padding: 10px;
+}
+
+input {
+  margin-top: 5px;
+  border: 2px solid #f5f5f2;
+  border-right: none;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+}
+
+input:hover {
+  background-color: $section-light;
+  color: $color-B;
+  border: 1px solid $color-B;
+}
+
+.icon-calendar,
+.icon-refresh {
+  display: inline;
+  color: $font-light-three;
+  border: none;
+  padding: 3px;
+}
+
+.icon-refresh {
+  color: $font-light-one;
+}
+
+@media (max-width: 900px) {
+  .form-container {
+    width: 90%;
+    padding: 0;
+  }
+  input {
+    font-size: 80%;
+    pading-left: 0;
+    pading-right: 0;
+  }
+}

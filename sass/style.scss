@@ -2,9 +2,11 @@
 @import '_variables';
 
 /* styles which will present in css */
-@import '_normalize';
-@import '_layout';
-@import 'sections/_sections';
-@import 'components/_typography';
-@import 'components/_buttons';
-@import 'components/_tables';
+@import 'icons';
+@import 'normalize';
+@import 'layout';
+@import 'sections/sections';
+@import 'components/typography';
+@import 'components/buttons';
+@import 'components/tables';
+@import 'components/forms';

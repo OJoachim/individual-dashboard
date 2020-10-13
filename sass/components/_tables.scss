@@ -2,12 +2,65 @@ table {
   border: none;
   padding: 10px;
 }
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  width: 70%;
+}
+
+table.links-list {
+  margin-left: auto; 
+  margin-right: auto;
+  width: 60%;
+}
+
+@media (max-width: 800px) {
+  table.links-list {
+    width: 95%;
+  }
+  table.links-list > td,
+  table.links-list > a {
+    font-size: 80%;
+    min-width: 120px;
+  }
+}
+
 td {
-  border-bottom: 1px solid #f5f5f2;
-  padding-right: 50px;
-  width: 150px;
+  border-bottom: 2px solid #f5f5f2;
+  width: 160px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.first {
+  border-top: 2px solid #f5f5f2;
+}
+
+tr:hover {
+  background-color: $section-light;
+  color: $color-B;
+  border: 1px dotted $color-B;
+}
+
+tr .icon {
+  display: none;
+}
+
+tr:hover .icon {
+  margin-left: auto;
+  margin-right: 5px;
+  margin-top: 2px;
+  float: right;
+  display: inline-block;
+}
+
+.left {
+  text-align: left;
+  padding-left: 0;
 }
 
 .right {
-  padding-left: 50px;
+  text-align: right;
+  padding-right: 0;
 }
