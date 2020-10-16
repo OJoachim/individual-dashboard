@@ -13,6 +13,12 @@ section {
   padding: 3px;
 }
 
+@media (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+}
+
 .topbar-container {
   width: 100%;
   background-color: $section-white;
@@ -55,6 +61,16 @@ section {
   vertical-align: sub;
 }
 
+.title-nav > .litle-b {
+  display: inline;
+  position: absolute;
+  top: 18px;
+  right: 258px;
+  color: $color-B;
+  font-size: 8px;
+  z-index: 1;
+}
+
 .nav-span {
   display: inline;
   padding-right: 15px;
@@ -62,24 +78,38 @@ section {
 }
 
 /* --- section sidebar --- */
-.sidebar {
+.sidebar, .active:hover {
   position: fixed;
   left: 0;
   top: 0;
   width: 165px;
   height: 100%;
-  background-color: grey;
+  background-color: $section-dark;
   overflow: auto;
   z-index: 1;
 }
 
-/* ---.main-nav {display: none}--- */
+@media (max-width: 768px) {
+  .sidebar:not(.active) {
+    left: -140px; 
+    height: 50px;
+    overflow: hidden;
+  }
+  .sidebar:active {
+    left: 0;
+    height: 100%;
+    width: 165px;
+    overflow: auto;
+  }
+}
 
 .logo {
   display: inline-block;
-  font-size: $bigger-size-two;
+  font-size: 140%;
+  font-style: italic;
   margin-top: 5px;
-  margin-left: 5px;
+  margin-left: 20px;
+  color: $font-light-one;
 }
 
 .navbar-toggle {
@@ -88,29 +118,96 @@ section {
   right: 5px;
 }
 
+.nav-links {
+  display: block;
+  margin-left: 18px;
+  margin-top: 3px;
+  padding: 2px;
+}
+
+.nav-links > span {
+  padding-right: 10px;
+}
+
+/* manager description */
+
+.manager {
+  margin-top: 30px;
+  border-top: 1px solid $font-light-three;
+  padding: 3px;
+}
+
+.manager-description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+}
+
+.manager-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 0;
+  padding-left: 5px;
+  font-size: $basic-size;
+}
+
 .manager-photo {
-  border-radius: 5%;
-  with: 20px;
-  height: 20px;
+  with: 32px;
+  height: 32px;
 } 
 
 .photo {
   object-fit: cover;
+  with: 100%;
+  border-radius: 50%;
+  border: 1px solid $section-light;
+  margin-left: 5px;
+}
+
+.manager-name {
+  margin-left: 10px;
+}
+
+.litle-a {
+  position: absolute;
+  top: 320px;
+  left: 32px;
+  color: $color-C;
+  z-index: 1;
+}
+
+.litle >.litle-a {
+  font-size: 8px;
 }
 
 .topnav-in-side {
-  margin-top: 50px;
+  margin-top: 70px;
+  padding: 2px;
+  margin-left: 3px;
 }
 
-.icons-in-side {
-  display: flex;
-  flex-direction: row;
-}
-
-.icons-in-side > a {
-  color: $font-light-one;
+.nav-in-side {
   display: block;
-  margin: 3px;
+  border: 1px solid $section-white;
+  border-radius: 2px;
+  box-shadow: 1px 1px $section-light;
+  padding: 2px;
+  margin-bottom: 3px;
+  color: $font-light-one;
+  margin-top: 3px;
+}
+
+@media (min-width: 768px) {
+  .nav-in-side {
+    display: none;
+  }
+}
+
+.nav-in-side > span {
+  margin-right: 3px;
+  margin-left: 3px;
 }
 
 /* --- section with class main, content --- */
@@ -122,6 +219,13 @@ section {
   padding-bottom: 10px;
   padding-top: 64px;
   background-color: $section-light;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
 }
 
 .chart-container,
@@ -162,16 +266,20 @@ section {
   padding: 5px;
 }
 
+.chart-container {
+  overflow: auto;
+}
+
 .chart-canvas {
   width: 60%;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  overflow: auto;
+  min-width: 700px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .chart-canvas {
     width: 100%;
   }

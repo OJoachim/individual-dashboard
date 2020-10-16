@@ -1,9 +1,9 @@
 //navigation
-let mainNav = document.querySelector('.menu-js');
-let navBarToggle = document.querySelector('.navbar-toggle-js');
+var sidebar = document.querySelector('.sidebar');
+var navBarToggle = document.querySelector('.navbar-js');
 
-navBarToggle.addEventListener('click', function(){
-  mainNav.classList.toggle('.active');
+navBarToggle.addEventListener('click', function(event){
+  sidebar.classList.toggle('.active');
 });
 
 //cannvas - myChart
